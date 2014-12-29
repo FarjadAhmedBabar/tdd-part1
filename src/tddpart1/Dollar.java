@@ -2,12 +2,16 @@ package tddpart1;
 
 public class Dollar 
 {
-	private int amount;
+	int amount;
 	Dollar(int amount) 
 	{
 		this.amount= amount;
 	}
-	void times(int multiplier) {
+	Dollar times(int multiplier) {
 		amount *= multiplier;
+		return null;
+		}
+	public int getAmount() {
+		return amount;
 	}
 }
