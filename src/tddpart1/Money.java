@@ -1,10 +1,17 @@
 package tddpart1;
 
-public abstract class Money {
+public class Money {
 	protected int amount;
 	protected String currency;
 
-	abstract Money times(int multiplier);
+	Money times(int amount) {
+		return null;
+	}
+
+	Money(int amount, String currency) {
+		this.amount = amount;
+		this.currency = currency;
+	}
 
 	public boolean equals(Object object) {
 		Money money = (Money) object;
@@ -21,5 +28,9 @@ public abstract class Money {
 
 	static Money franc(int amount) {
 		return new Franc(amount, "CHF");
+	}
+
+	public String toString() {
+		return amount + " " + currency;
 	}
 }
