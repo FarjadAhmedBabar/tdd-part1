@@ -1,6 +1,9 @@
 package tddpart1;
 
 public interface Expression {
-	Money reduce(Bank bank, String to);
-	Expression add(Expression addend);
+	public Money reduce(Bank bank, String to);
+
+	public Expression add(Expression addend);
+
+	public Expression times(int multiplier);
 }
